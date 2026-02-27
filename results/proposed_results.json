@@ -1,0 +1,5 @@
+{
+    "model": "CardioFuseNet",
+    "best_accuracy": 0.9793988466262817,
+    "best_epoch": 46
+}

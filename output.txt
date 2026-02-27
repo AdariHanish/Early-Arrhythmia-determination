@@ -1,0 +1,78 @@
+PS:- Date-> 19-02-2026|Time-> 22:47:33|DeviceName-> LAPTOP-PERSONAL|WorkingFolder-> C:\Users\honey
+> cd desk*
+PS:- Date-> 19-02-2026|Time-> 22:47:39|DeviceName-> LAPTOP-PERSONAL|WorkingFolder-> C:\Users\honey\Desktop
+> cd chat*
+PS:- Date-> 19-02-2026|Time-> 22:47:46|DeviceName-> LAPTOP-PERSONAL|WorkingFolder-> C:\Users\honey\Desktop\chatgpt
+> py main.py
+======================================================================
+  ╔═══════════════════════════════════════════════════════════╗
+  ║              CardioFuseNet v1.0                          ║
+  ║  A Sparse-Fusion ML Framework for Early Arrhythmia      ║
+  ╚═══════════════════════════════════════════════════════════╝
+======================================================================
+
+[MAIN] Step 1: Setting up environment...
+
+[UTILS] Using device: cpu
+[UTILS] Running on CPU.
+[UTILS] All seeds set to: 42
+[CONFIG] Required directories created/verified.
+
+[CONFIGURATION]
+Device: cpu
+Epochs: 50
+Learning Rate: 0.001
+Threshold: 0.5
+Smoothing Alpha: 0.7
+Sparse L1 Lambda: 0.001
+Fusion Weights: [0.5, 0.5]
+Temporal Shift: 1
+Signal Length: 187
+Dataset Directory: C:\Users\honey\Desktop\chatgpt\dataset
+Results Directory: C:\Users\honey\Desktop\chatgpt\results
+----------------------------------------
+
+[MAIN] Step 2: Verifying dataset files...
+
+✅ C:\Users\honey\Desktop\chatgpt\dataset\mitbih_train.csv
+✅ C:\Users\honey\Desktop\chatgpt\dataset\mitbih_test.csv
+All dataset files verified.
+
+
+[MAIN] Step 3: Training / Loading CardioFuseNet...
+
+✅ Existing trained model found. Loading checkpoint...
+
+Accuracy: 0.9794 | SNR: 13.42 dB | Latency/sample: 0.0566 ms | Fusion Score: 0.3235
+
+[MAIN] Step 4: Generating Research Figures...
+
+[UTILS] Results saved to results\proposed_results.json
+
+Proposed Model Results:
+{'model': 'CardioFuseNet', 'best_accuracy': 0.9793988466262817, 'best_epoch': 46}
+
+[MAIN] Step 5: Running Baseline Models...
+
+
+========== Running Baselines ==========
+
+[SVM] Training Started...
+[SVM] Accuracy: 95.35%
+
+[CNN] Training Started...
+CNN Epochs: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [02:20<00:00, 23.34s/it]
+[CNN] Accuracy: 93.92%
+
+[LSTM] Training Started...
+LSTM Epochs: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [04:30<00:00, 45.14s/it]
+[LSTM] Accuracy: 82.76%
+
+========== Baseline Completed ==========
+[UTILS] Results saved to results\baseline_results.json
+
+======================================================================
+✅ CardioFuseNet execution complete!
+======================================================================
+PS:- Date-> 19-02-2026|Time-> 22:55:27|DeviceName-> LAPTOP-PERSONAL|WorkingFolder-> C:\Users\honey\Desktop\chatgpt
+>

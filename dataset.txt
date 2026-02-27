@@ -1,0 +1,50 @@
+Option 1: Kaggle - MIT-BIH Arrhythmia Database (RECOMMENDED)
+Dataset: ECG Heartbeat Categorization Dataset
+Link: https://www.kaggle.com/datasets/shayanfazeli/heartbeat
+
+Files you need:
+
+mitbih_train.csv (87,554 samples, 188 columns)
+mitbih_test.csv (21,892 samples, 188 columns)
+Format:
+
+187 features (ECG signal samples)
+1 label column (last column): Values 0-4 representing AAMI classes
+0 = N (Normal)
+1 = S (Supraventricular)
+2 = V (Ventricular)
+3 = F (Fusion)
+4 = Q (Unknown)
+
+do one thing genererate me all the codes completely with everything without any error so that i can directly copy paste u know my folder structure completely
+Content/
+├── dataset/
+│   ├── train.csv                    (3205 × 188)
+│   └── test.csv                     (810 × 188)
+├── checkpoints/                     (auto-created)
+│   ├── best_model.h5               (best validation accuracy)
+│   ├── last_epoch_model.h5         (last completed epoch)
+│   ├── epoch_{N}_model.h5          (every epoch checkpoint)
+│   └── training_history.json       (full history for resume)
+├── results/                         (auto-created)
+│   ├── figure2_detection_accuracy.png
+│   ├── figure3_snr_variations.png
+│   ├── figure4_processing_latency.png
+│   ├── figure5_fusion_consistency.png
+│   ├── table1_comparison.png
+│   ├── training_accuracy_loss.png
+│   ├── auc_roc_curve.png
+│   ├── confusion_matrix.png
+│   └── per_class_metrics.png
+├── requirements.txt
+├── utils.py
+├── preprocessing.py
+├── sparse_feature_extraction.py
+├── fusion_module.py
+├── cardiofusenet_model.py
+├── baseline_models.py
+├── train_and_evaluate.py
+├── visualize_results.py
+└── main.py
+i need every code to be satisfying the paper completely and it should not have any error and results should also match
+and also mention in the code that which line of the paper it is satsfying and also i need everyhting in the paper to be implemented
