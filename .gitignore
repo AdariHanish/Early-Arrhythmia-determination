@@ -2,3 +2,5 @@ checkpoints/
 dataset/
 *.pth
 *.csv
+__pycache__/
+*.pyc
